@@ -6,13 +6,13 @@
 <script src="js/jquery.js"></script>
 <script>
 	$(function(){
-		$("#menu1 li:nth-child(1)")
+		$("#menu1 li:nth-child(1)")			// 모든 li 태그의 무리 중 각 1번째의 li 태그를 선택
 		.css({"background-color":"#ff0"});			// 백그라운드 컬러 수정
 
-		$("#menu1 li:nth-child(2n)")
+		$("#menu1 li:nth-child(2n)")			// 모든 li 태그의 무리 중 각2의 배수 번째의 li 태그를 선택
 		.css({"border":"2px dashed #f00"});			// 백그라운드 컬러 수정
 
-		$("#menu2 li:nth-last-child(2)")
+		$("#menu2 li:nth-last-child(2)")			// 모든 li 태그의 무리 중 각 마지막 두 번째 li 태그를 선택
 		.css({"background-color":"#0ff"});			// 백그라운드 컬러 수정
 	});
 </script>
