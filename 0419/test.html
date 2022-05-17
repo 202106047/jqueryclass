@@ -4,29 +4,27 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script> 
 $(document).ready(function(){
-    let imgarray = [
-        "https://www.dog-zzang.co.kr/dog_sale/photo/202202/1645422126_32747900.jpg",
-        "http://adog.kr/web/upload/NNEditor/20210106/2134.jpg",
-        "https://i.pinimg.com/originals/63/8f/08/638f08d979ffbd4c9da019335005bc90.jpg",   
-    ];
+  let imgarray = [
+      "https://www.dog-zzang.co.kr/dog_sale/photo/202202/1645422126_32747900.jpg",
+      "http://adog.kr/web/upload/NNEditor/20210106/2134.jpg",
+      "https://i.pinimg.com/originals/63/8f/08/638f08d979ffbd4c9da019335005bc90.jpg",   
+  ];
 
-    let imgarray = [
-        "1.jpg",
-        "2.jpg",
-        "3.jpg"
-    ];
+  let imgarray = [
+      "1.jpg",
+      "2.jpg",
+      "3.jpg"
+  ];
 
-    let num = 1;
+  let num = 0;
 
 
-setInterval(() => {
+  setInterval(() => {
     num = (num > 2) ? 0 : num;
-$("#images").attr("src", imgarray[num]).fadeIn(2000).fadeOut(1000)
-   num ++;
-}, 3000);
-
-
-
+    $("#images").attr("src", imgarray[num]).fadeIn(2000).fadeOut(1000)
+    num ++;
+  }, 3000);
+  
 });
 </script>
 <style> 
